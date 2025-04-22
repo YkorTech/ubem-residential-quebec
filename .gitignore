@@ -38,6 +38,18 @@ ubem.log
 # Simulation outputs and results - exclure sauf .gitkeep
 data/outputs/*
 !data/outputs/.gitkeep
+data/outputs/knowledge_base/*
+!data/outputs/knowledge_base/.gitkeep
+data/outputs/simulations/*
+!data/outputs/simulations/.gitkeep
+data/outputs/property_data_analysis/*
+!data/outputs/property_data_analysis/.gitkeep
+data/outputs/archetype_analysis/*
+!data/outputs/archetype_analysis/.gitkeep
+data/outputs/calibration/*
+!data/outputs/calibration/.gitkeep
+data/outputs/analysis/*
+!data/outputs/analysis/.gitkeep
 data/inputs/schedules/*
 !data/inputs/schedules/.gitkeep
 
