@@ -31,9 +31,15 @@ ubem.log
 # src/config.py  # Commenté pour permettre le partage de la configuration par défaut
 .env
 
-# Simulation outputs and results
-data/outputs/
-data/inputs/schedules/
+# Permettre l'inclusion des fichiers .gitkeep pour maintenir la structure des dossiers
+!.gitkeep
+!**/.gitkeep
+
+# Simulation outputs and results - exclure sauf .gitkeep
+data/outputs/*
+!data/outputs/.gitkeep
+data/inputs/schedules/*
+!data/inputs/schedules/.gitkeep
 
 # Temporary files
 *.tmp
@@ -45,8 +51,10 @@ data/inputs/schedules/
 *.epw
 *.xlsx
 *.parquet
-data/inputs/hydro/
-data/inputs/evaluation/
+data/inputs/hydro/*
+!data/inputs/hydro/.gitkeep
+data/inputs/evaluation/*
+!data/inputs/evaluation/.gitkeep
 
 # Templates OpenStudio
 !data/openstudio/templates/*.osw
@@ -63,12 +71,6 @@ notebooks/*
 # Fichiers de mapping météo qui doivent être inclus
 !data/inputs/weather/historic/h2k_epw_avec_zones_meteo.csv
 !data/inputs/weather/future/zones_futur_fichiers_epw.csv
-
-# Permettre l'inclusion des fichiers .gitkeep pour maintenir la structure des dossiers
-!data/inputs/hydro/.gitkeep
-!data/inputs/evaluation/.gitkeep
-!data/outputs/.gitkeep
-!data/inputs/schedules/.gitkeep
 
 # Test outputs
 .coverage
