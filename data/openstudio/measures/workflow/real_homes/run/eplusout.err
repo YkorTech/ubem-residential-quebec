@@ -1,0 +1,25 @@
+Program Version,EnergyPlus, Version 24.2.0-94a887817b, YMD=2025.01.19 15:59,
+   ** Warning ** Timestep: Requested number (1) is less than the suggested minimum of 4.
+   **   ~~~   ** Please see entry for Timestep in Input/Output Reference for discussion of considerations.
+   ** Warning ** PerformancePrecisionTradeoffs: Carroll MRT radiant exchange method is selected.
+   ************* Note that the following warning(s) may/will occur if you have not enclosed your zone completely.
+   ** Warning ** Entered Zone Volumes differ from calculated zone volume(s).
+   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual zones.
+   ** Warning ** CalculateZoneVolume: 3 zones are not fully enclosed. For more details use:  Output:Diagnostics,DisplayExtrawarnings; 
+   ** Warning ** Check input. Pump nominal power or motor efficiency is set to 0, for pump=DHW LOOP PUMP
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ** Warning ** Inside surface heat balance did not converge with Max Temp Difference [C] =9.440E-002 vs Max Allowed Temp Diff [C] =2.000E-003
+   **   ~~~   **  Environment=RUN PERIOD 1, at Simulation time=07/17 15:00 - 16:00
+   ************* Simulation Error Summary *************
+   ************* There are 1 unused objects in input.
+   ************* Use Output:Diagnostics,DisplayUnusedObjects; to see them.
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 6 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  3.48sec

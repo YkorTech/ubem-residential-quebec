@@ -1,0 +1,76 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+ubem.log
+
+# Local configuration
+# src/config.py  # Commenté pour permettre le partage de la configuration par défaut
+.env
+
+# Simulation outputs and results
+data/outputs/
+data/inputs/schedules/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+
+# Large data files and confidential data
+*.csv
+*.epw
+*.xlsx
+*.parquet
+data/inputs/hydro/
+data/inputs/evaluation/
+
+# Templates OpenStudio
+!data/openstudio/templates/*.osw
+
+# Fichiers et dossiers spécifiquement inclus dans le dépôt
+# Archétypes - inclure tout le dossier
+!data/inputs/archetypes/
+!data/inputs/archetypes/*.csv
+
+# Notebooks
+notebooks/*
+!notebooks/simulate_future_scenarios.ipynb
+
+# Fichiers de mapping météo qui doivent être inclus
+!data/inputs/weather/historic/h2k_epw_avec_zones_meteo.csv
+!data/inputs/weather/future/zones_futur_fichiers_epw.csv
+
+# Permettre l'inclusion des fichiers .gitkeep pour maintenir la structure des dossiers
+!data/inputs/hydro/.gitkeep
+!data/inputs/evaluation/.gitkeep
+!data/outputs/.gitkeep
+!data/inputs/schedules/.gitkeep
+
+# Test outputs
+.coverage
+htmlcov/
+.pytest_cache/ 

@@ -1,0 +1,40 @@
+# Core dependencies
+numpy>=2.0.0
+pandas>=1.3.0
+plotly>=5.0.0
+scipy>=1.7.0
+openstudio>=3.6.0
+
+# Dashboard
+dash>=2.0.0
+dash-bootstrap-components>=1.0.0
+dash-core-components>=2.0.0
+dash-html-components>=2.0.0
+maplibre-gl>=0.1.0  # MapLibre support for maps
+
+# Geospatial
+geopandas>=0.9.0
+shapely>=1.8.0
+
+# Machine Learning & Analysis
+scikit-learn>=1.0.0
+seaborn>=0.12.0
+matplotlib>=3.5.0
+pyDOE2>=1.3.0  # Design d'expériences
+SALib>=1.4.0   # Analyse de sensibilité
+joblib>=1.1.0  # Parallélisation
+tqdm>=4.62.0   # Progress bars
+
+# Jupyter
+jupyter>=1.0.0
+notebook>=6.4.0
+ipykernel>=6.0.0
+
+# Testing
+pytest>=6.0.0
+pytest-mock>=3.6.0
+
+# Utilities
+psutil>=5.8.0   # Monitoring ressources système
+openpyxl>=3.0.0 # Lecture/écriture Excel
+pyyaml>=6.0.0   # Parsing YAML

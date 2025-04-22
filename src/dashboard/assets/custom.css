@@ -1,0 +1,61 @@
+/* Custom styles for the dashboard */
+
+/* Make plots responsive */
+.js-plotly-plot {
+    width: 100%;
+}
+
+/* Add some spacing between cards */
+.card {
+    margin-bottom: 1rem;
+}
+
+/* Style the navbar */
+.navbar {
+    margin-bottom: 2rem;
+}
+
+/* Style tabs */
+.nav-tabs {
+    margin-bottom: 1rem;
+}
+
+/* Loading spinner overlay */
+#loading-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+/* Improve hover effects on buttons */
+.btn-primary:hover {
+    filter: brightness(110%);
+    transition: filter 0.2s;
+}
+
+/* Make cards more visually appealing */
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Style dropdowns */
+.Select-control {
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.Select-control:hover {
+    border-color: #aaa;
+}
+
+/* Improve readability of plot titles */
+.gtitle {
+    font-weight: 500;
+}

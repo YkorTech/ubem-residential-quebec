@@ -1,0 +1,109 @@
+{
+  "run_directory": "run",
+  "measure_paths": [
+    "C:\\PI4\\6\\residence_quebec\\data\\openstudio\\measures" 
+  ],
+  "steps": [
+    {
+      "arguments": {
+        "hpxml_path": "../built.xml",
+        "weather_station_epw_filepath": "", 
+        
+        "geometry_unit_type": "single-family detached",
+        "geometry_unit_cfa": 2700.0,
+        "geometry_average_ceiling_height": 8.0,
+        "geometry_unit_num_floors_above_grade": 1,
+        "geometry_unit_orientation": 180.0,
+        "geometry_unit_num_bedrooms": 3,
+        "geometry_unit_num_occupants": 3.0,
+        "year_built": null,
+        
+        "hvac_control_heating_weekday_setpoint": "68",
+        "hvac_control_heating_weekend_setpoint": "68",
+        "hvac_control_cooling_weekday_setpoint": "78", 
+        "hvac_control_cooling_weekend_setpoint": "78",
+
+        "heating_system_type": "Furnace",
+        "heating_system_fuel": "natural gas",
+        "heating_system_heating_efficiency": 0.92,
+        "heating_system_heating_capacity": 36000.0,
+
+        "cooling_system_type": "central air conditioner",
+        "cooling_system_cooling_efficiency_type": "SEER",
+        "cooling_system_cooling_efficiency": 13.0,
+        "cooling_system_cooling_capacity": 24000.0,
+
+        "water_heater_type": "storage water heater",
+        "water_heater_fuel_type": "electricity",
+        "water_heater_tank_volume": 40,
+        "water_heater_efficiency": 0.95,
+        "water_heater_efficiency_type": "EnergyFactor",
+
+        "window_area_back": 108.0,
+        "window_area_front": 108.0,
+        "window_area_left": 72.0,
+        "window_area_right": 72.0,
+        "window_aspect_ratio": 1.333,
+        "window_back_wwr": 0,
+        "window_front_wwr": 0,
+        "window_left_wwr": 0,
+        "window_right_wwr": 0,
+        "window_shgc": 0.45,
+        "window_ufactor": 0.33,
+        "rim_joist_assembly_r": 23.0,
+        "roof_assembly_r": 2.3,
+        "wall_assembly_r": 23,
+
+        "air_leakage_house_pressure": 50,
+        "air_leakage_units": "ACH",
+        "air_leakage_value": 3,
+        "ceiling_assembly_r": 39.3,
+
+        "door_area": 40.0,
+        "door_rvalue": 4.4,
+        "ducts_leakage_units": "CFM25",
+        "ducts_return_insulation_r": 0.0,
+        "ducts_return_leakage_to_outside_value": 25.0,
+        "ducts_return_location": "attic - unvented",
+        "ducts_return_surface_area": 50.0,
+        "ducts_supply_insulation_r": 4.0,
+        "ducts_supply_leakage_to_outside_value": 75.0,
+        "ducts_supply_location": "attic - unvented",
+        "ducts_supply_surface_area": 150.0,
+        "floor_over_foundation_assembly_r": 0,
+        "floor_over_garage_assembly_r": 0,
+        "foundation_wall_insulation_r": 8.9,
+        "geometry_attic_type": "UnventedAttic"
+      },
+      "measure_dir_name": "BuildResidentialHPXML"
+    },
+    {
+      "arguments": {
+        "hpxml_path": "../built.xml",
+        "output_dir": "..",
+        "debug": false,
+        "add_component_loads": false,
+        "skip_validation": false
+      },
+      "measure_dir_name": "HPXMLtoOpenStudio"
+    },
+    {
+      "arguments": {
+        "output_format": "csv",
+        "timeseries_frequency": "hourly",
+        "include_timeseries_total_consumptions": true,
+        "include_timeseries_fuel_consumptions": true,
+        "include_timeseries_end_use_consumptions": true,
+        "include_annual_total_consumptions": true,
+        "include_annual_fuel_consumptions": true,
+        "include_annual_end_use_consumptions": true
+      },
+      "measure_dir_name": "ReportSimulationOutput"
+    }
+  ],
+  "run_options": {
+    "fast": true,
+    "skip_expand_objects": true,
+    "skip_energyplus_preprocess": true
+  }
+}
